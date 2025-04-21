@@ -1,0 +1,433 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CR Horses | Premium Horse Marketing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              sage: {
+                50: '#f2f5f2',
+                100: '#e5ebe5',
+                200: '#ccd7cc',
+                300: '#aabfaa',
+                400: '#81a182',
+                500: '#5d8360',
+                600: '#3A5F41',
+                700: '#365038',
+                800: '#304230',
+                900: '#2a372b',
+              },
+              tan: {
+                50: '#fcf9f3',
+                100: '#f7f0e1',
+                200: '#efe1c5',
+                300: '#e5cd9f',
+                400: '#D4B483',
+                500: '#c69e5d',
+                600: '#b58747',
+                700: '#956c3a',
+                800: '#7a5934',
+                900: '#654a2f',
+              },
+              brown: {
+                50: '#f8f6f4',
+                100: '#f0ebe5',
+                200: '#e1d4c4',
+                300: '#cbb496',
+                400: '#b5926f',
+                500: '#a27a56',
+                600: '#8B5E34',
+                700: '#6d4a2d',
+                800: '#5e3f29',
+                900: '#4f3726',
+              },
+              cream: {
+                50: '#F8F4E3',
+                100: '#f2ecd1',
+                200: '#e9dfb3',
+                300: '#dece8c',
+                400: '#d4c06c',
+                500: '#cbad4a',
+                600: '#ba953b',
+                700: '#9a7730',
+                800: '#7d602c',
+                900: '#674f29',
+              },
+            },
+            fontFamily: {
+              serif: ['Playfair Display', 'Georgia', 'serif'],
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.7s ease-in-out',
+              'slide-up': 'slideUp 0.8s ease-out',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              slideUp: {
+                '0%': { transform: 'translateY(30px)', opacity: '0' },
+                '100%': { transform: 'translateY(0)', opacity: '1' },
+              },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div class="font-sans">
+      <!-- Header -->
+      <header class="fixed w-full z-50 transition-all duration-300 bg-sage-600">
+        <div class="container mx-auto px-4 flex justify-between items-center py-4">
+          <a href="#" class="flex items-center">
+            <div class="text-cream-50 font-serif">
+              <div class="text-lg font-semibold">CR</div>
+              <div class="text-lg font-semibold -mt-1">HORSES</div>
+            </div>
+          </a>
+
+          <nav class="hidden md:flex items-center space-x-6">
+            <a href="#" class="text-cream-50 hover:text-tan-400 transition-colors font-medium">Home</a>
+            <a href="#horses" class="text-cream-50 hover:text-tan-400 transition-colors font-medium">Horses</a>
+            <a href="#about" class="text-cream-50 hover:text-tan-400 transition-colors font-medium">About</a>
+            <a href="#contact" class="text-cream-50 hover:text-tan-400 transition-colors font-medium">Contact</a>
+            <a href="#horses" class="bg-tan-400 text-sage-800 px-4 py-2 rounded hover:bg-tan-500 transition-colors font-medium">View Horses</a>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <!-- Hero Section -->
+        <section class="relative h-screen">
+          <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/635499/pexels-photo-635499.jpeg?auto=compress&cs=tinysrgb&w=1600')">
+            <div class="absolute inset-0 bg-gradient-to-r from-sage-900/90 to-sage-900/70"></div>
+          </div>
+          
+          <div class="relative h-full flex flex-col items-center justify-center text-center px-4">
+            <div class="max-w-4xl mx-auto animate-fade-in">
+              <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-semibold text-cream-50 leading-tight mb-4">
+                Exceptional Horses for <span class="text-tan-400">Exceptional Riders</span>
+              </h1>
+              <p class="text-lg md:text-xl text-cream-50/90 max-w-2xl mx-auto mb-8">
+                CR Horses specializes in sourcing, training, and marketing premium sport horses 
+                for discerning equestrians worldwide.
+              </p>
+              <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#horses" class="bg-tan-400 hover:bg-tan-500 text-sage-800 font-medium px-6 py-3 rounded transition-colors">
+                  View Available Horses
+                </a>
+                <a href="#about" class="bg-transparent border-2 border-cream-50 text-cream-50 hover:bg-cream-50/10 font-medium px-6 py-3 rounded transition-colors">
+                  Learn About Us
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Featured Horses Section -->
+        <section id="horses" class="py-16 md:py-24 bg-cream-50/50">
+          <div class="container mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-12 animate-slide-up">
+              <h2 class="text-3xl md:text-4xl font-serif font-semibold text-sage-800 mb-4">
+                Featured Horses
+              </h2>
+              <p class="text-slate-600">
+                Discover our selection of exceptional horses, each carefully chosen for their 
+                bloodlines, temperament, and athletic ability.
+              </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <!-- Horse 1 -->
+              <div class="bg-cream-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+                <div class="relative h-64 md:h-72 overflow-hidden">
+                  <img src="https://images.pexels.com/photos/635499/pexels-photo-635499.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                       alt="Monarch's Legacy" 
+                       class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                  <div class="absolute top-4 right-4 bg-tan-400 text-sage-800 py-1 px-3 rounded-full text-sm font-medium">
+                    Featured
+                  </div>
+                </div>
+                <div class="p-5">
+                  <h3 class="text-xl font-serif font-semibold text-sage-800 mb-1">Monarch's Legacy</h3>
+                  <div class="flex justify-between items-center mb-3">
+                    <p class="text-brown-600 font-medium">Andalusian</p>
+                    <p class="text-sage-600 font-bold">$75,000</p>
+                  </div>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-sage-100 text-sage-700 text-xs px-2 py-1 rounded">Stallion</span>
+                    <span class="bg-sage-100 text-sage-700 text-xs px-2 py-1 rounded">7 years</span>
+                    <span class="bg-sage-100 text-sage-700 text-xs px-2 py-1 rounded">16.2 hands</span>
+                    <span class="bg-sage-100 text-sage-700 text-xs px-2 py-1 rounded">Dapple Grey</span>
+                  </div>
+                  <p class="text-slate-600 mb-4 line-clamp-3">A majestic Andalusian stallion with exceptional dressage training and impeccable bloodlines.</p>
+                  <button class="w-full bg-sage-600 hover:bg-sage-700 text-cream-50 py-2 rounded transition-colors font-medium">
+                    View Details
+                  </button>
+                </div>
+              </div>
+
+              <!-- Horse 2 -->
+              <div class="bg-cream-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+                <div class="relative h-64 md:h-72 overflow-hidden">
+                  <img src="https://images.pexels.com/photos/2397624/pexels-photo-2397624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                       alt="Serenity" 
+                       class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                  <div class="absolute top-4 right-4 bg-tan-400 text-sage-800 py-1 px-3 rounded-full text-sm font-medium">
+                    Featured
+                  </div>
+                </div>
+                <div class="p-5">
+                  <h3 class="text-xl font-serif font-semibold text-sage-800 mb-1">Serenity</h3>
+                  <div class="flex justify-between items-center mb-3">
+                    <p class="text-brown-600 font-medium">Friesian</p>
+                    <p class="text-sage-600 font-bold">$45,000</p>
+                  </div>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-sage-100 text-sage-700 text-xs px-2 py-1 rounded">Mare</span>
+                    <span class="bg-sage-100 text-sage-700 text-xs px-2 py-1 rounded">5 years</span>
+                    <span class="bg-sage-100 text-sage-700 text-xs px-2 py-1 rounded">16 hands</span>
+                    <span class="bg-sage-100 text-sage-700 text-xs px-2 py-1 rounded">Black</span>
+                  </div>
+                  <p class="text-slate-600 mb-4 line-clamp-3">Elegant Friesian mare with flowing mane and feathering. Well-trained in classical dressage.</p>
+                  <button class="w-full bg-sage-600 hover:bg-sage-700 text-cream-50 py-2 rounded transition-colors font-medium">
+                    View Details
+                  </button>
+                </div>
+              </div>
+
+              <!-- Horse 3 -->
+              <div class="bg-cream-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+                <div class="relative h-64 md:h-72 overflow-hidden">
+                  <img src="https://images.pexels.com/photos/1996333/pexels-photo-1996333.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                       alt="Apollo's Flame" 
+                       class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                  <div class="absolute top-4 right-4 bg-tan-400 text-sage-800 py-1 px-3 rounded-full text-sm font-medium">
+                    Featured
+                  </div>
+                </div>
+                <div class="p-5">
+                  <h3 class="text-xl font-serif font-semibold text-sage-800 mb-1">Apollo's Flame</h3>
+                  <div class="flex justify-between items-center mb-3">
+                    <p class="text-brown-600 font-medium">Arabian</p>
+                    <p class="text-sage-600 font-bold">$35,000</p>
+                  </div>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-sage-100 text-sage-700 text-xs px-2 py-1 rounded">Stallion</span>
+                    <span class="bg-sage-100 text-sage-700 text-xs px-2 py-1 rounded">4 years</span>
+                    <span class="bg-sage-100 text-sage-700 text-xs px-2 py-1 rounded">15.2 hands</span>
+                    <span class="bg-sage-100 text-sage-700 text-xs px-2 py-1 rounded">Chestnut</span>
+                  </div>
+                  <p class="text-slate-600 mb-4 line-clamp-3">Young Arabian stallion with championship bloodlines and exceptional movement.</p>
+                  <button class="w-full bg-sage-600 hover:bg-sage-700 text-cream-50 py-2 rounded transition-colors font-medium">
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 md:py-24 bg-sage-600">
+          <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div class="order-2 lg:order-1 animate-slide-up">
+                <h2 class="text-3xl md:text-4xl font-serif font-semibold text-cream-50 mb-6">
+                  About CR Horses
+                </h2>
+                <p class="text-cream-50/90 mb-4 text-lg">
+                  Founded in 2010, CR Horses has established itself as a premier resource for equestrians 
+                  seeking exceptional sport horses. Our commitment to quality and integrity has made us a 
+                  trusted name in the equestrian community.
+                </p>
+                <p class="text-cream-50/90 mb-6 text-lg">
+                  With extensive experience in breeding, training, and competing at the highest levels, 
+                  our team understands what makes a truly exceptional equine partner.
+                </p>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                  <div class="flex items-start space-x-3">
+                    <div>
+                      <h3 class="text-cream-50 font-medium text-lg">Quality Assurance</h3>
+                      <p class="text-cream-50/80 text-sm">Thorough vetting and assessment process</p>
+                    </div>
+                  </div>
+                  <div class="flex items-start space-x-3">
+                    <div>
+                      <h3 class="text-cream-50 font-medium text-lg">Expert Matching</h3>
+                      <p class="text-cream-50/80 text-sm">Finding the perfect horse for your needs</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <a href="#contact" class="inline-block bg-tan-400 hover:bg-tan-500 text-sage-800 font-medium px-6 py-3 rounded transition-colors">
+                  Contact Us
+                </a>
+              </div>
+              
+              <div class="order-1 lg:order-2 animate-slide-up">
+                <div class="relative">
+                  <div class="absolute inset-0 bg-tan-400 rounded-lg transform translate-x-4 translate-y-4"></div>
+                  <img src="https://images.pexels.com/photos/10790611/pexels-photo-10790611.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                       alt="Equestrian with horse" 
+                       class="relative z-10 rounded-lg shadow-lg w-full object-cover h-96 lg:h-auto">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 md:py-24 bg-cream-50">
+          <div class="container mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-12 animate-slide-up">
+              <h2 class="text-3xl md:text-4xl font-serif font-semibold text-sage-800 mb-4">
+                Get In Touch
+              </h2>
+              <p class="text-slate-600">
+                Interested in our horses or have questions? We're here to help you find 
+                your perfect equine partner.
+              </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              <div class="lg:col-span-2 animate-slide-up">
+                <form class="bg-white rounded-lg shadow-md p-6 md:p-8">
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                      <label for="name" class="block text-sm font-medium text-slate-700 mb-1">
+                        Full Name
+                      </label>
+                      <input type="text" id="name" class="w-full px-4 py-2 border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-sage-500" placeholder="Your name">
+                    </div>
+                    <div>
+                      <label for="email" class="block text-sm font-medium text-slate-700 mb-1">
+                        Email Address
+                      </label>
+                      <input type="email" id="email" class="w-full px-4 py-2 border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-sage-500" placeholder="Your email">
+                    </div>
+                  </div>
+                  
+                  <div class="mb-6">
+                    <label for="message" class="block text-sm font-medium text-slate-700 mb-1">
+                      Message
+                    </label>
+                    <textarea id="message" rows="5" class="w-full px-4 py-2 border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-sage-500" placeholder="Tell us about what you're looking for..."></textarea>
+                  </div>
+                  
+                  <button type="submit" class="w-full bg-sage-600 hover:bg-sage-700 text-cream-50 font-medium py-3 rounded transition-colors">
+                    Send Message
+                  </button>
+                </form>
+              </div>
+              
+              <div class="animate-slide-up">
+                <div class="bg-sage-600 rounded-lg shadow-md p-6 md:p-8 text-cream-50 h-full">
+                  <h3 class="text-xl font-serif font-semibold mb-6">Contact Information</h3>
+                  
+                  <div class="space-y-6">
+                    <div>
+                      <h4 class="font-medium mb-1">Phone</h4>
+                      <p>(555) 123-4567</p>
+                    </div>
+                    
+                    <div>
+                      <h4 class="font-medium mb-1">Email</h4>
+                      <p>info@crhorses.com</p>
+                    </div>
+                    
+                    <div>
+                      <h4 class="font-medium mb-1">Address</h4>
+                      <p>123 Equestrian Way<br>Lexington, KY 40507</p>
+                    </div>
+                    
+                    <div>
+                      <h4 class="font-medium mb-1">Hours</h4>
+                      <p>Monday - Friday: 9am - 5pm<br>Saturday: 10am - 3pm<br>Sunday: Closed</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="bg-sage-800 text-cream-50/90 pt-12 pb-6">
+        <div class="container mx-auto px-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+            <div>
+              <a href="#" class="flex items-center mb-4">
+                <div class="text-cream-50 font-serif">
+                  <div class="text-base font-semibold">CR</div>
+                  <div class="text-base font-semibold -mt-1">HORSES</div>
+                </div>
+              </a>
+              <p class="text-sm mb-4">
+                CR Horses specializes in sourcing, training, and marketing premium sport horses
+                for discerning equestrians worldwide.
+              </p>
+            </div>
+            
+            <div>
+              <h3 class="text-lg font-medium mb-4">Quick Links</h3>
+              <ul class="space-y-2">
+                <li><a href="#" class="text-cream-50/70 hover:text-tan-400 transition-colors">Home</a></li>
+                <li><a href="#horses" class="text-cream-50/70 hover:text-tan-400 transition-colors">Horses</a></li>
+                <li><a href="#about" class="text-cream-50/70 hover:text-tan-400 transition-colors">About Us</a></li>
+                <li><a href="#contact" class="text-cream-50/70 hover:text-tan-400 transition-colors">Contact</a></li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 class="text-lg font-medium mb-4">Services</h3>
+              <ul class="space-y-2">
+                <li><a href="#" class="text-cream-50/70 hover:text-tan-400 transition-colors">Horse Sales</a></li>
+                <li><a href="#" class="text-cream-50/70 hover:text-tan-400 transition-colors">Horse Evaluation</a></li>
+                <li><a href="#" class="text-cream-50/70 hover:text-tan-400 transition-colors">Training Programs</a></li>
+                <li><a href="#" class="text-cream-50/70 hover:text-tan-400 transition-colors">Breeding Consultation</a></li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 class="text-lg font-medium mb-4">Newsletter</h3>
+              <p class="text-sm mb-4">
+                Subscribe to our newsletter for the latest updates on available horses and upcoming events.
+              </p>
+              <form class="mb-4">
+                <div class="flex">
+                  <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l bg-sage-700 border border-sage-600 text-cream-50 placeholder-cream-50/50 focus:outline-none focus:ring-1 focus:ring-tan-400 flex-grow">
+                  <button type="submit" class="bg-tan-400 hover:bg-tan-500 text-sage-800 font-medium px-4 py-2 rounded-r transition-colors">
+                    Subscribe
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          
+          <div class="border-t border-sage-700 pt-6 mt-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+              <p class="text-sm text-cream-50/60 mb-4 md:mb-0">
+                &copy; 2025 CR Horses. All rights reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
